@@ -1,6 +1,8 @@
 body
 {
-    background-image:url(https://images.pexels.com/photos/831079/pexels-photo-831079.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+    /* background:url(https://media3.giphy.com/media/l4KihuqeuJEi9qLSM/giphy.gif) no-repeat center center fixed;
+    background-size: cover; */
+    background-color:rgb(116, 8, 8); 
 }
 #block{
     width:70%;
@@ -29,12 +31,10 @@ body
 {
     width:600px;
     height:500px;
-    background-color:black;
     margin-left:auto;
     margin-right:auto;
     margin-top:100px;
     box-shadow: 2px 1px 20px black;  
-    baackground-image: url(https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/itCjTBE/blue-smooth-flowing-waves-on-light-background-video-animation-hd-1920x1080_v1gtgzrrzg__F0008.png);
 }
 #chatbox
 {

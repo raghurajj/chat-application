@@ -6,12 +6,10 @@
 <body>
 
 
-     <div id="mainbox">
-         <div id="chatbox">
-
-         </div>
+    <div id="mainbox">
+        <div id="chatbox"></div>
       
-        <div id="inputs">
+    <div id="inputs">
            
         <input type="text" id="msg1"></input>
         <button onclick="fun()" id="btn">Send </button>
@@ -21,7 +19,7 @@
 
     </div>
     <script>
-        function fun()
+        function fun(event)
          {
             var newdiv = document.createElement('div');
             var r = document.getElementById('msg1').value;
@@ -33,11 +31,11 @@
             newdiv.id = 'block';  
             newdiv.innerHTML = r;
             document.getElementById('chatbox').appendChild(newdiv).scrollIntoView();
-            r=' ';
             }
+            document.getElementById("msg1").value = "";
          }
 
-         function fun1()
+         function fun1(event)
          {
             var newdiv1 = document.createElement('div');
             var r = document.getElementById('msg2').value;
@@ -50,8 +48,9 @@
             newdiv1.id = 'block1';  
             newdiv1.innerHTML = r;
             document.getElementById('chatbox').appendChild(newdiv1).scrollIntoView();
-            r=' ';
             }
+            document.getElementById("msg2").value = "";
+
          }
     </script>
 </body>
