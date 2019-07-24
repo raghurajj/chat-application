@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <link rel="stylesheet" type="text/css" href="raghutest.css"/>
+    </head>
+<body>
+
+
+     <div id="mainbox">
+         <div id="chatbox">
+
+         </div>
+      
+        <div id="inputs">
+           
+        <input type="text" id="msg1"></input>
+        <button onclick="fun()" id="btn">Send </button>
+        <input type="text" id="msg2"></input>
+        <button onclick="fun1()" id="btn">Send </button>
+    </div>
+
+    </div>
+    <script>
+        function fun()
+         {
+            var newdiv = document.createElement('div');
+            var r = document.getElementById('msg1').value;
+            if(r=="")
+            {
+                alert("please type a message first");
+            }
+            else{
+            newdiv.id = 'block';  
+            newdiv.innerHTML = r;
+            document.getElementById('chatbox').appendChild(newdiv).scrollIntoView();
+            r=' ';
+            }
+         }
+
+         function fun1()
+         {
+            var newdiv1 = document.createElement('div');
+            var r = document.getElementById('msg2').value;
+            if(r=="")
+            {
+                alert("please type a message first");
+            }
+            else
+            {
+            newdiv1.id = 'block1';  
+            newdiv1.innerHTML = r;
+            document.getElementById('chatbox').appendChild(newdiv1).scrollIntoView();
+            r=' ';
+            }
+         }
+    </script>
+</body>
+</html>
