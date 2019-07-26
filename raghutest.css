@@ -10,10 +10,10 @@ body
     padding:15px;
     margin:5px 10px 0px;
     border-radius: 10px;
-    color:white;
+    color:black;
     font-size:18px;
     float:left;
-    background-color:red;
+    background-color:lightgreen;
 }
 #block1{
      width:70%;
@@ -21,9 +21,9 @@ body
      padding:15px;
      margin:5px 10px 0px;
      border-radius: 10px;
-     color:white;
+     color:black;
      font-size:18px;
-     background-color:green;
+     background-color:lightgrey;
      position: relative;
     float:right;     
  }
